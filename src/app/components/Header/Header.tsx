@@ -2,11 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const pathname = usePathname();
-
   const headerBgClass = "bg-brown"; // Both cases use the same background
 
   return (
