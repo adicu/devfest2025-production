@@ -1,0 +1,45 @@
+.dayView {
+    color: #333;
+  }
+  
+  .dayView h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .eventList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .eventItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .eventTime {
+    font-weight: bold;
+    margin-right: 1rem;
+    width: 100px;
+    color: #2d3748;
+  }
+  
+  .eventDetails {
+    flex: 1;
+  }
+  
+  .eventTitle {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #2b6cb0;
+  }
+  
+  .eventDescription {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #4a5568;
+  }
+  

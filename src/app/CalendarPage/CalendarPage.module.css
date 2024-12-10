@@ -1,0 +1,111 @@
+.mainContainer {
+    padding: 2rem;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+  }
+  
+  .pageTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .calendarContainer {
+    display: flex;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .sideTabs {
+    width: 15%;
+    background-color: #e53e3e; /* Changed from #2d3748 to a red shade */
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  
+  .tabButton {
+    background: none;
+    border: none;
+    color: #edf2f7; /* Changed text color to white for better contrast */
+    padding: 1rem;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .tabButton:hover {
+    background-color: #c53030; /* Darker red on hover */
+    color: #ffffff; /* Ensure text remains white on hover */
+  }
+  
+  .activeTab {
+    background-color: #c53030; /* Active tab has a darker red background */
+    color: #ffffff; /* Active tab text is white */
+    font-weight: bold;
+  }
+  
+  .calendarContent {
+    width: 85%;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  
+  /* Scrollbar Styling */
+  .calendarContent::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .calendarContent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .calendarContent::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    border-radius: 4px;
+  }
+  
+  .calendarContent {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #f1f1f1;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .calendarContainer {
+      flex-direction: column;
+    }
+  
+    .sideTabs {
+      width: 100%;
+      flex-direction: row;
+      overflow-x: auto;
+      background-color: #e53e3e; /* Ensure background remains red on small screens */
+    }
+  
+    .tabButton {
+      flex: 1;
+      text-align: center;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-left: 1px solid #c53030; /* Optional: Add borders between tabs */
+    }
+  
+    .activeTab {
+      border-left: none; /* Remove border if added */
+      border-top: 4px solid #38a169; /* Optional: Different active indicator on small screens */
+    }
+  
+    .calendarContent {
+      width: 100%;
+      padding: 1rem;
+      height: 60vh;
+    }
+  }
+  
