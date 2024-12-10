@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  const isHome = pathname === "/" || pathname === "/HomePage";
 
   const headerBgClass = "bg-brown"; // Both cases use the same background
 
