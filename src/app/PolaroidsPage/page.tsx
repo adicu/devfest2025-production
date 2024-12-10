@@ -1,4 +1,4 @@
-import Polaroids from "../Components/Polaroids/Polaroids";
+import Polaroids from "../components/Polaroids/Polaroids";
 
 const judges = [
   {
