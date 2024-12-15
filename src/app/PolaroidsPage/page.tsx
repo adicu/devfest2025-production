@@ -1,57 +1,61 @@
+// pages/PolaroidsPage.tsx
+"use client";
+
+import React from "react";
 import Polaroids from "../components/Polaroids/Polaroids";
 
 const judges = [
   {
-    name: "judge 1",
-    intro: "intro 1",
+    name: "Judge 1",
+    intro: "Introduction for Judge 1.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "judge 2",
-    intro: "intro 2",
+    name: "Judge 2",
+    intro: "Introduction for Judge 2.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "judge 3",
-    intro: "intro 3",
+    name: "Judge 3",
+    intro: "Introduction for Judge 3.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "judge 4",
-    intro: "intro 4",
+    name: "Judge 4",
+    intro: "Introduction for Judge 4.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "judge 5",
-    intro: "intro 5",
+    name: "Judge 5",
+    intro: "Introduction for Judge 5.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
 ];
 
 const sponsors = [
   {
-    name: "sponsor 1",
-    intro: "intro 1",
+    name: "Sponsor 1",
+    intro: "Introduction for Sponsor 1.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "sponsor 2",
-    intro: "intro 2",
+    name: "Sponsor 2",
+    intro: "Introduction for Sponsor 2.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "sponsor 3",
-    intro: "intro 3",
+    name: "Sponsor 3",
+    intro: "Introduction for Sponsor 3.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "sponsor 4",
-    intro: "intro 4",
+    name: "Sponsor 4",
+    intro: "Introduction for Sponsor 4.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
   {
-    name: "sponsor 5",
-    intro: "intro 5",
+    name: "Sponsor 5",
+    intro: "Introduction for Sponsor 5.",
     link: "https://media.istockphoto.com/id/1345388323/vector/human-silhouette-isolated-vector-icon.jpg?s=612x612&w=0&k=20&c=a1wg9LYywdqDUG-t9rifrf16XEdWZbWe7ajuYxJTxEI=",
   },
 ];
@@ -62,9 +66,9 @@ export default function PolaroidsPage() {
       {/* Judges Section */}
       <div>
         <h2 className="text-2xl text-center mb-5">Judges</h2>
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 gap-4 w-full">
           {judges.map((judge, index) => (
-            <div key={`judge-${index}`} className="p-2">
+            <div key={`judge-${index}`} className="p-2 min-w-[120px]">
               <Polaroids
                 name={judge.name}
                 intro={judge.intro}
@@ -78,9 +82,9 @@ export default function PolaroidsPage() {
       {/* Sponsors Section */}
       <div>
         <h2 className="text-2xl text-center mb-5">Sponsors</h2>
-        <div className="grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-5 gap-4 w-full">
           {sponsors.map((sponsor, index) => (
-            <div key={`sponsor-${index}`} className="p-2">
+            <div key={`sponsor-${index}`} className="p-2 min-w-[120px]">
               <Polaroids
                 name={sponsor.name}
                 intro={sponsor.intro}
