@@ -16,7 +16,7 @@ module.exports = {
         },
         background: '#F5F5F5', // Define a background color if needed
         black: '#1E1A20',
-        white: '#f0f4f8',
+        white: '#ffffff',
       },
       borderRadius: {
         'lg': '12px', // Customize if needed
