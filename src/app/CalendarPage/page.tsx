@@ -90,7 +90,6 @@ const CalendarPage: React.FC = () => {
 
   return (
     <main className={styles.mainContainer}>
-      <h1 className={styles.pageTitle}>Calendar Page</h1>
       <div className={styles.calendarContainer}>
         {/* Side Tabs */}
         <div className={styles.sideTabs}>

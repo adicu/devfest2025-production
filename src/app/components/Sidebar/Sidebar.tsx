@@ -20,6 +20,11 @@ const Sidebar: React.FC = () => {
     >
       {/* Bubble 1 */}
       <div className={`bg-brown-400 p-4 rounded-lg ${textColorClass}`}>
+        <h2 className="font-bold mb-2">
+          <a href="https://devpost.com" className="underline">
+            REGISTER NOW
+          </a>
+        </h2>
         <h2 className="font-bold mb-2">DEVPOST</h2>
         <p>
           Checkout the{" "}

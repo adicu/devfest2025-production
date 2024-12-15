@@ -58,30 +58,35 @@ const sponsors = [
 
 export default function PolaroidsPage() {
   return (
-    <div className="p-8">
+    <div className="p-8 space-y-10">
+      {/* Judges Section */}
       <div>
-        <div className="text-2xl text-center">Judges</div>
-        <div className="grid grid-cols-5 gap-10 p-5 justify-center">
+        <h2 className="text-2xl text-center mb-5">Judges</h2>
+        <div className="grid grid-cols-5 gap-4">
           {judges.map((judge, index) => (
-            <Polaroids
-              key={`judge-${index}`}
-              name={judge.name}
-              intro={judge.intro}
-              link={judge.link}
-            />
+            <div key={`judge-${index}`} className="p-2">
+              <Polaroids
+                name={judge.name}
+                intro={judge.intro}
+                link={judge.link}
+              />
+            </div>
           ))}
         </div>
       </div>
+
+      {/* Sponsors Section */}
       <div>
-        <div className="text-2xl text-center">Sponsors</div>
-        <div className="grid grid-cols-5 gap-10 p-5">
+        <h2 className="text-2xl text-center mb-5">Sponsors</h2>
+        <div className="grid grid-cols-5 gap-4">
           {sponsors.map((sponsor, index) => (
-            <Polaroids
-              key={`sponsor-${index}`}
-              name={sponsor.name}
-              intro={sponsor.intro}
-              link={sponsor.link}
-            />
+            <div key={`sponsor-${index}`} className="p-2">
+              <Polaroids
+                name={sponsor.name}
+                intro={sponsor.intro}
+                link={sponsor.link}
+              />
+            </div>
           ))}
         </div>
       </div>
