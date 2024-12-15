@@ -1,6 +1,8 @@
 // src/app/components/Sidebar/Sidebar.tsx
+
 "use client";
 import React from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Sidebar: React.FC = () => {
@@ -10,7 +12,7 @@ const Sidebar: React.FC = () => {
   // Set background based on the current page
   const sidebarBgClass = isHome ? "bg-black" : "bg-white";
 
-  // Optionally, set text color based on background for better contrast
+  // Set text color based on background for better contrast
   const textColorClass = isHome ? "text-white" : "text-black";
 
   return (
@@ -38,7 +40,7 @@ const Sidebar: React.FC = () => {
         <h2 className="font-bold mt-4 mb-2">DEVFEST DISCORD</h2>
         <p>
           Join our{" "}
-          <a href="https://discord.gg/" className="underline">
+          <a href="https://discord.gg/devfest" className="underline">
             DevFest Discord
           </a>{" "}
           community to ask questions, find teammates, and more!
@@ -55,7 +57,6 @@ const Sidebar: React.FC = () => {
         </p>
 
         <p>
-          <a></a>
           <a href="https://instagram.com/" className="underline">
             Instagram
           </a>
