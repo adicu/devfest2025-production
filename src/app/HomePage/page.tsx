@@ -4,6 +4,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
+import Popup from "../components/Popup"; // Import the Popup component
 
 export default function HomePage() {
   const router = useRouter();
@@ -24,7 +25,7 @@ export default function HomePage() {
   // State for typing animation
   const [displayedText, setDisplayedText] = useState("");
   const fullText =
-    "Hii, I'm Roaree the lion! I'm here to help you navigate your DevFest 2025 Home. To see information about the schedule, click the calendar. For information about the judges and sponsors, click the polaroids. For information about the hackathon, click the computer.";
+    "HHi, I'm Roaree the lion! I'm here to help you navigate your DevFest 2025 Home. Click the calendar, polaroids, or computer to learn more!";
 
   // State to trigger bounce animations
   const [bounceCalendar, setBounceCalendar] = useState(false);
@@ -41,6 +42,26 @@ export default function HomePage() {
 
   // State to track if typing is in progress
   const [isTyping, setIsTyping] = useState(true);
+
+  // State to control the visibility of the popup
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    // Check if the screen width is less than the md breakpoint (768px)
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setShowPopup(true);
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     setIsTyping(true); // Typing starts
@@ -196,7 +217,7 @@ export default function HomePage() {
         <div
           ref={textBoxRef}
           className={`absolute bg-gray-800 bg-opacity-90 text-white p-6 
-                      rounded-lg border-2 border-gray-600 shadow-lg w-[250px] h-[400px] pixelated pop-up overflow-y-auto cursor-move`}
+                      rounded-lg border-2 border-gray-600 shadow-lg w-[250px] h-[220px] pixelated pop-up overflow-y-auto cursor-move`}
           style={{ top: "50px", right: "180px", position: "absolute" }}
           onMouseDown={handleMouseDown}
         >
@@ -212,6 +233,14 @@ export default function HomePage() {
           {/* Message Content */}
           <p>{displayedText}</p>
         </div>
+      )}
+
+      {/* Popup for Mobile Navigation Guidance */}
+      {showPopup && (
+        <Popup
+          message="Slide right and left to navigate"
+          onClose={() => setShowPopup(false)}
+        />
       )}
 
       {/* Custom Styles for Animation and Pixelated Text Box */}
