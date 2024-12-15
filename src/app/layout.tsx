@@ -27,22 +27,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={pixelifySans.variable}>
       <body className="font-sans text-foreground m-0 p-0">
-        {/* Scaling Wrapper */}
-        <div className="transform scale-90 md:scale-100 origin-top-left md:origin-center">
-          <BackgroundWrapper className="flex flex-col h-[850px]">
-            {/* Header */}
-            <Header />
+        <BackgroundWrapper className="flex flex-col h-screen">
+          {/* Header */}
+          <Header />
 
-            {/* Sidebar and Main Content */}
-            <div className="flex flex-row flex-1">
-              {/* Sidebar */}
-              <Sidebar />
+          {/* Sidebar and Main Content */}
+          <div className="flex flex-col md:flex-row flex-1">
+            {/* Sidebar */}
+            <Sidebar />
 
-              {/* Main Content Area */}
-              <main className="flex-1 overflow-auto p-4">{children}</main>
-            </div>
-          </BackgroundWrapper>
-        </div>
+            {/* Main Content Area */}
+            <main className="flex-1 overflow-auto p-4">{children}</main>
+          </div>
+        </BackgroundWrapper>
       </body>
     </html>
   );

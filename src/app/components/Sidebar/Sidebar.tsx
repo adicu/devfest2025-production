@@ -16,7 +16,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <aside
-      className={`w-64 h-full ${sidebarBgClass} p-4 flex flex-col space-y-6 pt-4 overflow-y-auto`}
+      className={`hidden md:block w-64 h-full ${sidebarBgClass} p-4 flex flex-col space-y-6 pt-4 overflow-y-auto`}
     >
       {/* Bubble 1 */}
       <div className={`bg-brown-400 p-4 rounded-lg ${textColorClass}`}>
