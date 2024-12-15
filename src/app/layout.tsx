@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={pixelifySans.variable}>
       <body className="font-sans text-foreground m-0 p-0">
-        <BackgroundWrapper className="flex flex-col h-screen">
+        <BackgroundWrapper className="flex flex-col h-[850px]">
           {/* Header */}
           <Header />
 

@@ -20,7 +20,7 @@ export default function BackgroundWrapper({
   const backgroundClass = isHome ? "bg-[#1E1A20]" : "bg-background";
 
   return (
-    <div className={`${backgroundClass} h-[1000px] w-full ${className}`}>
+    <div className={`${backgroundClass} h-[901px] w-full ${className}`}>
       {children}
     </div>
   );
