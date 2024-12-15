@@ -1,10 +1,12 @@
+// src/app/components/Header/Header.tsx
+
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
-  const headerBgClass = "bg-brown"; // Both cases use the same background
+  const headerBgClass = "bg-brown-500"; // Use defined shade
 
   return (
     <header

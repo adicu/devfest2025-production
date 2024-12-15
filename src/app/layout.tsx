@@ -1,6 +1,9 @@
+// src/app/layout.tsx
+
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
 import localFont from "next/font/local";
 import BackgroundWrapper from "./components/BackgroundWrapper";
 
@@ -24,13 +27,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={pixelifySans.variable}>
       <body className="font-sans text-foreground m-0 p-0">
-        <BackgroundWrapper className="pt-8">
-          <div className="px-4">
-            <Header />
-          </div>
-          <div className="flex pt-7">
-            {/* Removed Sidebar */}
-            <main className="flex-1 overflow-auto">{children}</main>
+        <BackgroundWrapper className="flex flex-col h-screen">
+          {/* Header */}
+          <Header />
+
+          {/* Sidebar and Main Content */}
+          <div className="flex flex-row flex-1">
+            {/* Sidebar */}
+            <Sidebar />
+
+            {/* Main Content Area */}
+            <main className="flex-1 overflow-auto p-4">{children}</main>
           </div>
         </BackgroundWrapper>
       </body>

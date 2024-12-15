@@ -3,13 +3,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Paths to your files
+    // Adjust according to your project structure
     './src/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}', // Added to ensure Tailwind scans the app directory
   ],
   theme: {
     extend: {
       colors: {
-        brown: '#8B4513',
+        brown: {
+          400: '#A0522D', // Sienna
+          500: '#8B4513', // SaddleBrown
+        },
+        background: '#F5F5F5', // Define a background color if needed
+        black: '#1E1A20',
+        white: '#f0f4f8',
       },
       borderRadius: {
         'lg': '12px', // Customize if needed
@@ -24,4 +31,3 @@ module.exports = {
   },
   plugins: [],
 };
-

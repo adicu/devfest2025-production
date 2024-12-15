@@ -195,8 +195,8 @@ export default function HomePage() {
       {showTextBox && (
         <div
           ref={textBoxRef}
-          className="absolute bg-gray-800 bg-opacity-90 text-white p-6 
-                     rounded-lg border-2 border-gray-600 shadow-lg w-[250px] h-[400px] pixelated pop-up overflow-y-auto cursor-move"
+          className={`absolute bg-gray-800 bg-opacity-90 text-white p-6 
+                      rounded-lg border-2 border-gray-600 shadow-lg w-[250px] h-[400px] pixelated pop-up overflow-y-auto cursor-move`}
           style={{ top: "50px", right: "180px", position: "absolute" }}
           onMouseDown={handleMouseDown}
         >

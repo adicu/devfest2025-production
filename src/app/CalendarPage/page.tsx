@@ -6,7 +6,84 @@ import DayView from "../components/DayView";
 
 type Weekday = "Mon" | "Tue" | "Wed" | "Thu" | "Fri";
 
+// Define the structure for an event
+type Event = {
+  time: string;
+  location: string;
+  name: string;
+};
+
+// Define the structure for a day's events
+type DayEvents = {
+  speaker: Event;
+  workshop: Event;
+};
+
 const weekdays: Weekday[] = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+
+// Sample schedule data
+const schedule: Record<Weekday, DayEvents> = {
+  Mon: {
+    speaker: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+    workshop: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+  },
+  Tue: {
+    speaker: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+    workshop: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+  },
+  Wed: {
+    speaker: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+    workshop: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+  },
+  Thu: {
+    speaker: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+    workshop: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+  },
+  Fri: {
+    speaker: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+    workshop: {
+      time: "time tbd",
+      location: "location tbd",
+      name: "name tbd",
+    },
+  },
+};
 
 const CalendarPage: React.FC = () => {
   const [activeDay, setActiveDay] = useState<Weekday>("Mon");
@@ -33,7 +110,7 @@ const CalendarPage: React.FC = () => {
 
         {/* Calendar Content */}
         <div className={styles.calendarContent}>
-          <DayView day={activeDay} />
+          <DayView day={activeDay} events={schedule[activeDay]} />
         </div>
       </div>
     </main>
