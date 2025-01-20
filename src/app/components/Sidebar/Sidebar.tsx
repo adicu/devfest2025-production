@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
         <h2 className="font-bold mb-2">DEVPOST</h2>
         <p>
           Checkout the{" "}
-          <a href="https://devpost.com" className="underline">
+          <a href="https://devfest2025.devpost.com/" className="underline">
             DevPost
           </a>{" "}
           for prizes and submissions.

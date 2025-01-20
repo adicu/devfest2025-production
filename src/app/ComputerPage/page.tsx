@@ -44,10 +44,10 @@ const ComputerPage: React.FC = () => {
         <li>
           <strong>When is DevFest?</strong>
           <p>
-            DevFest runs from January 29th to February 4th, with the hackathon
-            portion going from Saturday morning to Sunday morning of that week.
-            Workshops and talks will run in the evening during the week, in the
-            spirit of our weeklong development festival :)
+            DevFest runs from February 3rd to February 9th, with the hackathon
+            portion going from Saturday morning to Sunday afternoon of that
+            week. Workshops and talks will run in the evening during the week,
+            in the spirit of our weeklong development festival :)
           </p>
         </li>
         <li>
