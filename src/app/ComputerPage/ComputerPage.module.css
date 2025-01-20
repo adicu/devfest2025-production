@@ -186,3 +186,9 @@
     font-size: 1.4rem;
   }
 }
+
+.faqContent strong {
+  font-weight: 700; /* Ensures boldest text */
+  font-size: 1.1em; /* Slightly larger font */
+  color: #333333; /* Darker text color for emphasis */
+}

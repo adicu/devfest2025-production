@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
 import styles from "./ComputerPage.module.css"; // Ensure the path is correct
+import React, { ReactNode } from "react";
 
 // Define the props interface
 interface BlurbProps {
   title: string;
-  description: string;
+  description: ReactNode;
 }
 
 // Define the Blurb component with typed props
