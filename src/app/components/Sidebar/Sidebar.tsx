@@ -50,7 +50,7 @@ const Sidebar: React.FC = () => {
         <h2 className="font-bold mt-4 mb-2">DEVFEST DISCORD</h2>
         <p>
           Join our{" "}
-          <a href="https://discord.gg/devfest" className="underline">
+          <a href="https://discord.gg/j8nYJdfe8G" className="underline">
             DevFest Discord
           </a>{" "}
           community to ask questions, find teammates, and more!
