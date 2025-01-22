@@ -99,6 +99,19 @@ const ComputerPage: React.FC = () => {
             or via our Discord server where you can ping any of the organizers.
           </p>
         </li>
+        <li className="mt-4">
+          <p>
+            For more information, please refer to the{" "}
+            <a
+              className="underline"
+              href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+            >
+              {" "}
+              MLH code of conduct
+            </a>
+            .
+          </p>
+        </li>
       </ul>
     </div>
   );
