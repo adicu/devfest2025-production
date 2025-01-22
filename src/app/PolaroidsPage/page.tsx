@@ -132,31 +132,19 @@ export default function PolaroidsPage() {
         <div className="mt-8 text-2xl">Gold Sponsors</div>
         <div className="grid grid-cols-1 gap-10 p-5">
           {sponsors_gold.map((sponsor, index) => (
-            <Sponsors
-              key={`sponsor-${index}`}
-              name={sponsor.name}
-              link={sponsor.link}
-            />
+            <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
           ))}
         </div>
         <div className="mt-4 text-2xl">Silver Sponsors</div>
         <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-4">
           {sponsors_silver.map((sponsor, index) => (
-            <Sponsors
-              key={`sponsor-${index}`}
-              name={sponsor.name}
-              link={sponsor.link}
-            />
+            <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
           ))}
         </div>
         <div className="mt-4 text-2xl">Bronze Sponsors</div>
         <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-3">
           {sponsors_bronze.map((sponsor, index) => (
-            <Sponsors
-              key={`sponsor-${index}`}
-              name={sponsor.name}
-              link={sponsor.link}
-            />
+            <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
           ))}
         </div>
       </div>
