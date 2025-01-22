@@ -26,7 +26,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={pixelifySans.variable}>
-      <body className="font-sans text-foreground m-0 p-0">
+      <body className="font-sans text-foreground m-0 p-0 bg-white">
         <a
           id="mlh-trust-badge"
           className="block fixed top-0 left-2 w-1/10 max-w-[100px] min-w-[60px] z-[10000]"

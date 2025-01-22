@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
   const sidebarBgClass = isHome ? "bg-black" : "bg-white";
 
   // Set text color based on background for better contrast
-  const textColorClass = isHome ? "text-white" : "text-black";
+  const textColorClass = "text-white";
 
   return (
     <aside
