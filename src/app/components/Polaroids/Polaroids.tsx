@@ -26,7 +26,7 @@ function Polaroids({ name, intro, link }: PolaroidsProps) {
         <div className="absolute inset-0 w-full h-full backface-hidden">
           <div className="w-full h-full bg-zinc-400 p-2 flex flex-col items-center">
             {/* Image */}
-            <div className="w-full h-4/5 overflow-hidden">
+            <div className="w-full h-4/5 overflow-hidden bg-white">
               <img
                 src={link}
                 alt={name}
@@ -42,8 +42,8 @@ function Polaroids({ name, intro, link }: PolaroidsProps) {
 
         {/* Back of the Polaroid */}
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
-          <div className="w-full h-full bg-zinc-400 p-4 flex items-center justify-center text-center">
-            <p className="text-xs md:text-sm lg:text-base break-words">{intro}</p>
+          <div className="w-full h-full bg-zinc-400 p-3 flex text-center overflow-y-scroll">
+            <p>{intro}</p>
           </div>
         </div>
       </div>
