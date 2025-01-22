@@ -31,6 +31,9 @@ module.exports = {
         'fluid-sm': 'calc(0.75rem + 0.5vw)',
         'fluid-xs': 'calc(0.65rem + 0.3vw)',
       },
+	  screens: {
+		'md':'900px'
+      },
     },
   },
   plugins: [],
