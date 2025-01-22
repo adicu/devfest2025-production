@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
       className={`flex items-center justify-between ${headerBgClass} rounded-md p-4 ${className}`}
     >
       {/* Left Side: Logo and Title */}
-      <div className="flex items-center">
+      <div className="flex items-center pl-28">
         <Link href="/">
           <Image src="/icon.ico" alt="Logo" width={60} height={60} />
         </Link>
@@ -83,10 +83,10 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <nav className="absolute top-20 left-0 w-full bg-brown-500 md:hidden flex flex-col space-y-4 p-4 rounded-md shadow-lg z-50">
+        <nav className="absolute top-20 left-0 w-full bg-brown-500 md:hidden flex flex-col space-y-4 p-4 rounded-md shadow-lg z-50 text-center">
           <Link
             href="/HomePage"
-            className="text-white hover:text-gray-300"
+            className="text-white hover:text-gray-300 "
             onClick={() => setIsMenuOpen(false)}
           >
             Home

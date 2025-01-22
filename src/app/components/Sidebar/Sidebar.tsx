@@ -16,10 +16,11 @@ const Sidebar: React.FC = () => {
 
   return (
     <aside
-      className={`hidden md:block w-64 h-full ${sidebarBgClass} p-4 flex flex-col space-y-6 pt-4 overflow-y-auto`}
+      className={`hidden md:block w-64 h-full ${sidebarBgClass} p-4 flex flex-col space-y-6 pt-16 overflow-y-auto`}
     >
       {/* Bubble 1 */}
       <div className={`bg-brown-400 p-4 rounded-lg ${textColorClass}`}>
+        <h2 className="font-bold mb-2">DEVFEST FEB 2 - 9!</h2>
         <h2 className="font-bold mb-2">
           <a
             href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfSpVlGgtFRA-W32fPYA1dbDeAYRk8pdXJq8OepS7jGtm6wYQ/viewform?usp=send_form&pli=1"

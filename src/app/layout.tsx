@@ -27,6 +27,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={pixelifySans.variable}>
       <body className="font-sans text-foreground m-0 p-0">
+        <a
+          id="mlh-trust-badge"
+          className="block fixed top-0 left-2 w-1/10 max-w-[100px] min-w-[60px] z-[10000]"
+          href="https://mlh.io/na?utm_source=na-hackathon&amp;utm_medium=TrustBadge&amp;utm_campaign=2024-season&amp;utm_content=white"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2025/mlh-trust-badge-2025-white.svg"
+            alt="Major League Hacking 2024 Hackathon Season"
+            className="w-full"
+          />
+        </a>
+
         <BackgroundWrapper className="flex flex-col h-[950px]">
           {/* Header */}
           <Header />
