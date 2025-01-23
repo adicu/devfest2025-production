@@ -14,10 +14,24 @@ interface DayViewProps {
   events: Event[];
 }
 
+// Dictionary mapping days to specific dates
+const dayToDate: Record<Day, string> = {
+  Mon: "2/3",
+  Tue: "2/4",
+  Wed: "2/5",
+  Thu: "2/6",
+  Fri: "2/7",
+  Sat: "2/8",
+  Sun: "2/9",
+};
+
 const DayView: React.FC<DayViewProps> = ({ day, events }) => {
+  const date = dayToDate[day];
   return (
     <div className={styles.dayView}>
-      <h2>{day} Schedule</h2>
+      <h2>
+        {day} ({date}) Schedule
+      </h2>
       {events.map((event, index) => (
         <div key={index} className={styles.eventCard}>
           <p>
