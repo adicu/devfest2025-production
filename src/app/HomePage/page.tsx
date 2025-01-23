@@ -47,20 +47,14 @@ export default function HomePage() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    // Check if the screen width is less than the md breakpoint (768px)
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setShowPopup(true);
-      }
-    };
+    // Check if the popup has been shown before
+    const hasSeenPopup = localStorage.getItem("hasSeenPopup");
 
-    // Initial check
-    handleResize();
-
-    // Event listener for window resize
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
+    if (!hasSeenPopup && window.innerWidth < 768) {
+      // Show the popup for the first visit on smaller screens
+      setShowPopup(true);
+      localStorage.setItem("hasSeenPopup", "true"); // Mark popup as shown
+    }
   }, []);
 
   useEffect(() => {
