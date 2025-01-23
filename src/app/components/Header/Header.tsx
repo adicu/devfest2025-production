@@ -77,7 +77,7 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
           Calendar
         </Link>
         <Link href="/PolaroidsPage" className="text-white hover:text-gray-300">
-          People
+          Judges & Sponsors
         </Link>
       </nav>
 
@@ -110,7 +110,7 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
             className="text-white hover:text-gray-300"
             onClick={() => setIsMenuOpen(false)}
           >
-            People
+            Judges & Sponsors
           </Link>
         </nav>
       )}
