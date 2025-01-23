@@ -148,6 +148,12 @@ export default function PolaroidsPage() {
           ))}
         </div>
       </div>
+      <div className="mt-12 flex flex-col">
+        <div className="text-4xl text-center">
+          Special thanks to StandOut Stickers
+        </div>
+        <img src="/standout-stickers.png" className="w-3/5 mt-8 self-center" />
+      </div>
     </div>
   );
 }
