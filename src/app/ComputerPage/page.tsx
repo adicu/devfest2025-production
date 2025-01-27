@@ -55,7 +55,7 @@ const ComputerPage: React.FC = () => {
           <p>DevFest is open to all college students.</p>
         </li>
         <li>
-          <strong>Can I participate in DevFest if I'm under 18?</strong>
+          <strong>Can I participate in DevFest if I am under 18?</strong>
           <p>No. All participants have to be over 18 to participate.</p>
         </li>
         <li>
