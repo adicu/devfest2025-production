@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Polaroids from "../components/Polaroids/Polaroids";
 import Sponsors from "../components/Polaroids/Sponsors";
 
@@ -152,7 +153,15 @@ export default function PolaroidsPage() {
         <div className="text-4xl text-center">
           Special thanks to StandOut Stickers
         </div>
-        <img src="/standout-stickers.png" className="w-3/5 mt-8 self-center" />
+        <Link
+          className="flex flex-col align-middle"
+          href="http://hackp.ac/mlh-StandOutStickers-hackathons"
+        >
+          <img
+            src="/standout-stickers.png"
+            className="w-3/5 mt-8 self-center"
+          />
+        </Link>
       </div>
     </div>
   );
