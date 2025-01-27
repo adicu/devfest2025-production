@@ -116,7 +116,8 @@ export default function PolaroidsPage() {
   return (
     <div className="p-8">
       <div>
-        <div className="text-4xl text-center">Judges</div>
+        {/* Force text color to black */}
+        <div className="text-4xl text-center text-black">Judges</div>
         <div className="grid grid-cols-1 gap-10 p-5 justify-center sm:grid-cols-5">
           {judges.map((judge, index) => (
             <Polaroids
@@ -128,21 +129,25 @@ export default function PolaroidsPage() {
           ))}
         </div>
       </div>
+
       <div className="mt-8 flex flex-col items-center md:items-start">
-        <div className="text-4xl self-center">Sponsors</div>
-        <div className="mt-8 text-2xl">Gold Sponsors</div>
+        <div className="text-4xl self-center text-black">Sponsors</div>
+
+        <div className="mt-8 text-2xl text-black">Gold Sponsors</div>
         <div className="grid grid-cols-1 gap-10 p-5">
           {sponsors_gold.map((sponsor, index) => (
             <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
           ))}
         </div>
-        <div className="mt-4 text-2xl">Silver Sponsors</div>
+
+        <div className="mt-4 text-2xl text-black">Silver Sponsors</div>
         <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-4">
           {sponsors_silver.map((sponsor, index) => (
             <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
           ))}
         </div>
-        <div className="mt-4 text-2xl">Bronze Sponsors</div>
+
+        <div className="mt-4 text-2xl text-black">Bronze Sponsors</div>
         <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-3">
           {sponsors_bronze.map((sponsor, index) => (
             <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
