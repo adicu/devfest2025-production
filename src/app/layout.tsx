@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "DevFest 2025",
   description:
     "Columbia's largest annual hackathon and week-long computer science festival.",
-  icons: { icon: "/icon.ico" },
+  icons: { icon: "/logo.svg" },
 };
 
 interface RootLayoutProps {

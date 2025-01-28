@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ className = "" }) => {
       {/* Left Side: Logo and Title */}
       <div className="flex items-center pl-28">
         <Link href="/">
-          <Image src="/icon.ico" alt="Logo" width={60} height={60} />
+          <Image src="/logo.svg" alt="Logo" width={60} height={60} />
         </Link>
         <h1 className="ml-4 text-white text-3xl md:text-6xl">DevFest 2025</h1>
       </div>
