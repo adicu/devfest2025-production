@@ -4,7 +4,7 @@ const nextConfig = {
     images: {
       domains: [], // Add any external image domains here if you're using the `next/image` component
     },
-    output: "standalone", // Recommended for serverless deployment like Netlify
+    //output: "standalone", // Recommended for serverless deployment like Netlify
   };
   
   export default nextConfig;
