@@ -155,7 +155,7 @@ export default function PolaroidsPage() {
         </div>
       </div>
       <div className="mt-12 flex flex-col">
-        <div className="text-4xl text-center">
+        <div className="text-4xl text-center text-black">
           Special thanks to StandOut Stickers
         </div>
         <Link
