@@ -5,11 +5,12 @@ import React, { useState } from "react";
 
 type PolaroidsProps = {
   name: string;
+  title: string; // Added title field
   intro: string; // Judge intro on the back of the polaroid
   link: string;
 };
 
-function Polaroids({ name, intro, link }: PolaroidsProps) {
+function Polaroids({ name, title, intro, link }: PolaroidsProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -33,9 +34,12 @@ function Polaroids({ name, intro, link }: PolaroidsProps) {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            {/* Name Text */}
+            {/* Name & Title Text */}
             <div className="mt-2 text-sm md:text-base lg:text-lg text-center break-words">
-              {name}
+              <div className="font-bold">{name}</div>
+              <div className="text-xs md:text-sm lg:text-base text-gray-700">
+                {title}
+              </div>
             </div>
           </div>
         </div>
