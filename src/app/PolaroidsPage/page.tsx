@@ -114,6 +114,10 @@ const sponsors_silver = [
     name: "Telora",
     link: "/telora-logo.jpeg",
   },
+  {
+    name: "Memenome",
+    link: "/memenome-logo.png",
+  },
 ];
 
 const sponsors_bronze = [
@@ -164,7 +168,7 @@ export default function PolaroidsPage() {
         </div>
 
         <div className="mt-4 text-2xl text-black">Silver Sponsors</div>
-        <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 p-5 md:grid-cols-5">
           {sponsors_silver.map((sponsor, index) => (
             <Sponsors key={`sponsor-${index}`} link={sponsor.link} />
           ))}
@@ -187,7 +191,7 @@ export default function PolaroidsPage() {
         >
           <img
             src="/standout-stickers.png"
-            className="w-3/5 mt-8 self-center"
+            className="w-2/5 mt-8 self-center"
           />
         </Link>
       </div>
