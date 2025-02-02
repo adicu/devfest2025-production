@@ -89,6 +89,13 @@ const judges = [
       "Victor is a product designer with experience in creating B2B and B2C mobile interfaces. His expertise includes responsive designs, design system visual uplift, data visualization, and best practice documentations. In this talk, he will challenge the idea of 'less is more' in UX and will demonstrate how thoughtfully implemented complexities could bridge the gap between visual appeal and functionality, along with insights on different approaches, tools and design methodologies to achieve design excellence.",
     link: "/victor-wang.png",
   },
+  {
+    name: "Peiyu Wang",
+    title: "Security Reseracher @ CertiK",
+    intro:
+      "Peiyu Wang is a Security Researcher at CertiK, specializing in Web3 application penetration testing, smart contract audits, and security research. With over six years of experience in cybersecurity, he has conducted assessments on crypto exchanges, decentralized applications, wallets, and DeFi protocols, helping secure hundreds of clients in the blockchain space. Before joining CertiK, Peiyu worked as a security consultant at NCC Group and Harbor Labs, focusing on software development and security assessments. He holds a master’s degree in Information Security from Johns Hopkins University and professional certifications, including Offensive Security Certified Professional (OSCP) and Offensive Security Web Expert (OSWE).",
+    link: "/peiyu-wang.png",
+  },
 ];
 
 const sponsors_gold = [
