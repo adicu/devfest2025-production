@@ -5,8 +5,10 @@ import styles from "./DayView.module.css";
 type Day = "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun";
 type Event = {
   time: string;
-  name: string;
-  location?: string;
+  room: string;
+  eventType: string;
+  eventName: string;
+  description: string;
 };
 
 interface DayViewProps {
@@ -16,13 +18,13 @@ interface DayViewProps {
 
 // Dictionary mapping days to specific dates
 const dayToDate: Record<Day, string> = {
-  Mon: "2/3",
-  Tue: "2/4",
-  Wed: "2/5",
-  Thu: "2/6",
-  Fri: "2/7",
-  Sat: "2/8",
-  Sun: "2/9",
+  Mon: "3-Feb-2025",
+  Tue: "4-Feb-2025",
+  Wed: "5-Feb-2025",
+  Thu: "6-Feb-2025",
+  Fri: "7-Feb-2025",
+  Sat: "8-Feb-2025",
+  Sun: "9-Feb-2025",
 };
 
 const DayView: React.FC<DayViewProps> = ({ day, events }) => {
@@ -38,13 +40,17 @@ const DayView: React.FC<DayViewProps> = ({ day, events }) => {
             <strong>Time:</strong> {event.time}
           </p>
           <p>
-            <strong>Event:</strong> {event.name}
+            <strong>Room:</strong> {event.room}
           </p>
-          {event.location && (
-            <p>
-              <strong>Location:</strong> {event.location}
-            </p>
-          )}
+          <p>
+            <strong>Event Type:</strong> {event.eventType}
+          </p>
+          <p>
+            <strong>Event Name:</strong> {event.eventName}
+          </p>
+          <p>
+            <strong>Description:</strong> {event.description}
+          </p>
         </div>
       ))}
     </div>
