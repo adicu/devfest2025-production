@@ -96,6 +96,13 @@ const judges = [
       "Peiyu Wang is a Security Researcher at CertiK, specializing in Web3 application penetration testing, smart contract audits, and security research. With over six years of experience in cybersecurity, he has conducted assessments on crypto exchanges, decentralized applications, wallets, and DeFi protocols, helping secure hundreds of clients in the blockchain space. Before joining CertiK, Peiyu worked as a security consultant at NCC Group and Harbor Labs, focusing on software development and security assessments. He holds a master’s degree in Information Security from Johns Hopkins University and professional certifications, including Offensive Security Certified Professional (OSCP) and Offensive Security Web Expert (OSWE).",
     link: "/peiyu-wang.png",
   },
+  {
+    name: "Andrea Clark",
+    title: "PHD Researcher @ Columbia University",
+    intro:
+      "Andrea is a PhD student under the supervision of Dr. Ansaf Salleb Aoussi, focusing on the intersection of interpretable machine learning and causal inference. Her research aims to develop more transparent and explainable AI systems while uncovering meaningful causal relationships in data, focusing on reducing bias in predictive medical models. When she's not working, you can find her enjoying a good film, playing soccer with friends, or exploring the city on her bike.",
+    link: "/andrea-clark.jpg",
+  },
 ];
 
 const sponsors_gold = [
